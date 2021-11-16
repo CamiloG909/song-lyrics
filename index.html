@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1CCC5B" />
+	<link rel="stylesheet" href="styles/css/styles.css">
+	<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+	<title>Song lyrics</title>
+</head>
+<body>
+	<header class="header"><img class="header__img" src="assets/img/logo.png" alt="Logo header"></header>
+	<main>
+		<div class="container-index">
+			<h1 class="container-index__title">Song lyrics</h1>
+			<div class="container-grid">
+				<section class="search-song">
+					<p class="search-song__title">Search</p>
+					<form id="search-song">
+					<label class="search-song__label" for="singer">Singer:</label>
+					<input class="search-song__input" type="text" name="singer" id="singer" placeholder="Enter the singer's name">
+					<label class="search-song__label" for="song">Song:</label>
+					<input class="search-song__input" type="text" name="song" id="song" placeholder="Enter the name of the song">
+					<button class="search-song__btn">
+						<i class="bi bi-search search-song__btn-icon"></i> Search
+					</button>
+				</form>
+				</section>
+				<section class="song-lyrics">
+					<figure class="song-lyrics__empty">
+						<i class="bi bi-disc"></i>
+						<p class="song-lyrics__empty-text">Please find a song</p>
+					</figure>
+					<!-- <p class="song-lyrics__title">Song lyrics</p>
+					<p class="song-lyrics__text"></p> -->
+				</section>
+			</div>
+	</div>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>
