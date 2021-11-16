@@ -1,9 +1,11 @@
+const header = document.querySelector(".header .header__img");
 const containerForm = document.querySelector(".search-song");
 const form = document.querySelector("#search-song");
 const title = document.querySelector(".container-index__title");
 const lyricsContainer = document.querySelector(".song-lyrics");
 const emptyFigure = document.querySelector(".song-lyrics__empty");
 
+header.addEventListener("click", () => window.location.reload());
 form.addEventListener("submit", searchSong);
 
 class API {
@@ -81,12 +83,12 @@ function searchSong(e) {
 
 	// Validate form
 	if (singer === "" || song === "") {
-		title.classList.add("--error");
+		title.classList.add("--title-error");
 		title.textContent = "Please fill all the fields";
 
 		// Hidden error
 		setTimeout(() => {
-			title.classList.remove("--error");
+			title.classList.remove("--title-error");
 			title.textContent = "Song lyrics";
 		}, 1500);
 		return;
